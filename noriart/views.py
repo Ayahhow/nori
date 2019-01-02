@@ -3,7 +3,7 @@ from noriart import app
 
 @app.route('/')
 def show_firstpage():
-    return render_template('test.html')
+    return render_template('test3.html')
 
 @app.route('/test2')
 def show_test2():

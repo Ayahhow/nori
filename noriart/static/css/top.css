@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-
+    font-family: 'HuiFontP109';
 }
 body{
     background-color: antiquewhite;
@@ -14,6 +14,17 @@ body{
 .section1{
     text-align: center;
     font-family:'HuiFontP109';
+}
+
+#navbar{
+    text-align: center;
+}
+#navbar li{
+    display: inline;
+}
+
+#pagenav{
+    display: none;
 }
 
 

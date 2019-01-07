@@ -1,0 +1,60 @@
+.section {
+    width: 100%;
+  }
+.section-content {
+    padding: 40px 60px;
+    text-align: center;
+}
+  
+  /* h2 {
+    color: #232323;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  
+  h3 {
+    color: #232323;
+  }
+  
+  p {
+    color: #232323;
+  } */
+  
+.section-photo1{
+  background-image: url("/static/images/top_image2.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  }
+
+.section-photo2{
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url("/static/images/top_image3.jpg");
+}
+
+.section-photo3{
+  background-image: url("/static/images/norihaikei.png");
+}
+
+
+
+.section-white{
+  background-color: white;
+}
+
+.section-red {
+background-color: #ff6363;
+}
+
+.section-blue {
+background-color: #8fbbff;
+}
+
+.section-yellow{
+  background-color: #FBF3AB;
+}
+
+.section-orange{
+  background-color: #FDDFA0;
+}

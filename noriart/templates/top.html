@@ -3,89 +3,127 @@
 
 <head>
     <meta charset="UTF-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/Scrollify-master/jquery.scrollify.js"></script>
+    <script type="text/javascript" src="/static/js/main.js"></script>
     <link rel=stylesheet type=text/css href="/static/css/top.css">
+    <link rel=stylesheet type=text/css href="/static/css/forjs.css">
     <title>top</title>
 </head>
 
 
 <body>
-    <div id="title">
-        <h1>のりあーと美術館</h1>
+    <div id="contents1">
+    <section id=titlesection class="section section-photo1 js-section" data-section-name="section">
+        <div id="titleswrap">
+            <div id="title">
+                <h1>みんなでカンタンのりあーと映え</h1>
+            </div>
+            <nav id="topnav">
+                <ul id="navbar">
+                    <li id="navconcept"><a href="#conseptsection">Concept</a></li>
+                    <li id="navmenu"><a href="#samplesection">Sample</a></li>
+                    <li id="navinsta"><a href="#instasection">Instagram</a></li>
+                    <li id="navcatalog"><a href="#catalogsection">Catalog</a></li>
+                    <li id="navcontact"><a href="#contactsection">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="triangle"></div>
+        </div>
+    </section>
     </div>
-    <nav id="topnav">
-        <ul id="navbar">
-            <li id="navconcept"><a href="#">Concept</a></li>
-            <li id="navmenu"><a href="#">Menu</a></li>
-            <li id="navhowtocook"><a href="#">How to cook</a></li>
-            <li id="navinsta"><a href="#">Instagram</a></li>
-            <li id="navcatalog"><a href="#">Catalog</a></li>
-            <li id="navcontact"><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <nav id="pagenav">
-            <ul>
-                <li id="nav2concept"><a href="#">Concept</a></li>
-                <li id="nav2menu"><a href="#">Menu</a></li>
-                <li id="nav2howtocook"><a href="#">How to cook</a></li>
-                <li id="nav2insta"><a href="#">Instagram</a></li>
-                <li id="nav2catalog"><a href="#">Catalog</a></li>
-                <li id="nav2contact"><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+    
 
     <main>
-        <section id="conseptsection">
-            <div id="instaphoto">
-                <img src="/static/images/insta.png">
-            </div>
-            <div id="conseptwrap">
-                <h1>＋10秒で簡単インスタ映え</h1>
-                <p>平日のお弁当、週末のホームパーティーに<span>海苔</span>を<span>ワンポイント</span>して<span>かんたんオシャレ</span>に</p>
-            </div>
-        </section>
-        <section id="menusection">
-            <h1>Menu</h1>
-            <p>お弁当には...</p>
-            <img src="/static/images/logo.png">
-            <img src="/static/images/logo.png">
-            <p>ホームパーティーには...</p>
-            <img src="/static/images/logo.png">
-            <img src="/static/images/logo.png">
-        </section>
-        <section　id="instagramsection">
-            <h1></h1>        
-        </section>
-    
-    
-        <!-- <section id="howtocooksection">
-            <p>作り方はこちらでもいいかもね</p>
-            <h1>How to cook</h1>
-            <artticle id="pizza">
-                <div id="pizzawrap">
-                    <div class="pizzarecipi">
-                        <ul>
-                            <li>①</li>
-                            <li><img src="/static/images/logo.png"></li>
-                            <li>ピザに使用する具材を用意と爪楊枝でおばけ型にかたどったチーズを用意。</li>
-                        </ul>
-                    </div>
-                    <div class="pizzarecipi">
-                        <ul>
-                            <li>②</li>
-                            <li><img src="/static/images/logo.png"></li>
-                            <li>市販のピザ生地にケチャップなどのソースを塗り、具材をのせてオーブンへ</li>
-                        </ul>
-                    </div>
-                    <div class="pizzarecipi">
-                        <ul>
-                            <li>③</li>
-                            <li><img src="/static/images/logo.png"></li>
-                            <li>最後にのりあーとハロウィンをワンポイント</li>
-                        </ul>
-                    </div> 
+        <section id="conseptsection" class="section section-orange js-section" data-section-name="section1">
+            <div class="section-content">
+                <div id="instaphoto">
+                    <img src="/static/images/insta.png">
                 </div>
-            </artticle>
-        </section> -->
+                <div id="conseptwrap">
+                    <h1>＋10秒で簡単インスタ映え</h1>
+                    <p id="conseptp1">平日のお弁当に</p>
+                    <p id="conseptp2">週末のホームパーティーに</p>
+                    <p id="conseptp3"><span>海苔</span>を<span>ワンポイント</span>して<span>らくちんオシャレ</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="samplesection" class="section section-yellow js-section" data-section-name="section2">
+            <div class="section-content">
+                <h1>Sample</h1>
+                <h2>お弁当には...</h2>
+                <div class="samplewrap">
+                    <img src="/static/images/bento.png" class="sampleimg">
+                    <div class="samplecomment">
+                        <p>いつものおにぎりにワンポイントするだけでかわいさUP！！</p>
+                        <a href="#">レシピをCHECK!</a>
+                    </div></div>
+                <div class="clearline"></div>
+                <h2>ホームパーティーには...</h2>
+                <div class="samplewrap">
+                    <img src="/static/images/pizza.png" class="sampleimg">
+                    <div class="samplecomment">
+                        <p>ハロウィンパーティーのピザにのりをプラスでにぎやかに！！</p>
+                        <a href="#">レシピをCHECK!</a>
+                    </div></div>
+                <div class="clearline"></div>
+                <div class="samplewrap">
+                    <img src="/static/images/cup.png" class="sampleimg">
+                <div class="samplecomment">
+                    <p>簡単にできちゃうカップケーキ風てのり寿司で女子会ウケまちがいなし！！</p>
+                    <a href="#">レシピをCHECK!</a>
+                </div></div>
+            </div>
+        </section>
+        
+        <section id="instasection" class="section section-blue js-section" data-section-name="section3">
+            <div class="section-content">
+                <h1>#のりあーと</h1>
+                <p>#のりあーとで投稿！みんなでインスタ映え！！</p>
+                <div id="imageswrap">
+                    <ul class="instaul">
+                        <li><a href="{{ url_for('show_setsumei') }}"><img src="static/images/insta01.png"></a></li>
+                        <li><a href="{{ url_for('show_setsumei') }}"><img src="static/images/insta02.png"></a></li>
+                        <li><a href="{{ url_for('show_setsumei') }}"><img src="static/images/insta03.png"></a></li> 
+                        <li><a href="{{ url_for('show_setsumei') }}"><img src="static/images/insta04.png"></a></li>         
+                    </ul>
+                    <ul class="instaul">
+                        <li><a href="{{ url_for('show_setsumei') }}"><img src="static/images/insta03.png"></a></li>
+                        <li><a href="{{ url_for('show_setsumei') }}"><img src="static/images/insta04.png"></a></li>
+                        <li><a href="{{ url_for('show_setsumei') }}"><img src="static/images/insta01.png"></a></li>   
+                        <li><a href="{{ url_for('show_setsumei') }}"><img src="static/images/insta02.png"></a></li>         
+                    </ul>
+                </div>
+            </div>
+        </section>
+    
+        <section id="catalogsection" class="section section-red js-section" data-section-name="section4">
+           <div class="section-content">
+                <h1>Sampleレシピに使用したのりあーとはこちら</h1>
+                <ul id="catalogimgs">
+                    <li><img src="/static/images/nori01.jpg"></li>
+                    <li><img src="/static/images/nori02.jpg"></li>
+                    <li><img src="/static/images/nori03.jpg"></li>
+                </ul>
+                <div id="centerbutton">
+                <a href="http://www.kozenhonten.com/shopbrand/ct50/" id="clickbutton">ご購入はこちら</a>
+                </div>
+           </div>
+        </section>
+        
+        <section id="contactsection" class="section section-photo2 js-section" data-section-name="section5">
+            <div class="section-content">
+                <h1>Contact</h1>
+                <div id="otoiawase">
+                    <img src="http://www.kozen.co.jp/img/company/company_img03.gif">
+                    <p>株式会社　小善本店</p>
+                    <p>Tel　0120-323271(フリーダイヤル)</p>
+                    <p>043-498-3271(フリーダイヤルがご利用できない場合)</p>
+                    <p>Mail visitor@kozen.co.jp</p>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 

@@ -9,3 +9,6 @@ def show_toppage():
 def show_test2():
     return render_template('test2.html')
 
+@app.route('/iiwake')
+def show_setsumei():
+    return render_template('iiwake.html')

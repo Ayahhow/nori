@@ -52,22 +52,32 @@
     padding-top: 60px;
     margin-left: 350px;
 }
+#conseptwrap{
+    margin-top: 150px;
+    font-weight: bold;
+    width: 50%;
+    padding: 1em 1em;
+    background: -moz-linear-gradient(#ffb03c, #ff708d);
+    background: -webkit-linear-gradient(#ffb03c, #ff708d);
+    background: linear-gradient(to right, #ffb03c, #ff708d);
+    color: #FFF;
+}
 #conseptwrap h1{
     font-size: 46px;
 }
 #conseptwrap p{
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #conseptp1{
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 25px;
 }
 #conseptp2{
-    margin-left: 60px;
+    margin-left: 50px;
 }
 #conseptp3{
-    margin-left: 90px;
+    margin-left: 75px;
 }
 
 
@@ -95,6 +105,29 @@
     float: left;
     margin-bottom: 30px;
 }
+
+/* .recipi{
+    clear: both;
+    display: none;
+} */
+.recipi{
+    clear: both;
+    position: relative;
+    padding: 0.6em;
+    background: #e0edff;
+}
+  
+.recipi::before {
+  position: absolute;
+  content: '';
+  top: -30px;
+  left: 30px;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #e0edff;
+  width: 0;
+  height: 0;
+  }
+
 
 .samplecomment{
     font-size: 20px;
